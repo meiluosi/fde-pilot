@@ -1,0 +1,4 @@
+interface:
+  display_name: "FDE 试点设计与成效判定"
+  short_description: "把通过 Demo 的方案设计成事前登记的试点，并按预登记指标判定使用、业务与护栏三轴"
+  default_prompt: "用 $fde-pilot 为这个场景设计试点，先找出最影响设计的未知，并提醒事前登记。"

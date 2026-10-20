@@ -22,9 +22,13 @@ class PackageTests(unittest.TestCase):
         self.assertLessEqual(len(m.group(2)), 1024)
 
     def test_portable_paths(self):
-        files = list((R / 'references').glob('*.md')) + [R / 'SKILL.md']
-        for p in files:
-            self.assertNotIn('/Users/', p.read_text(encoding='utf-8'))
+        # 公开仓库卫生：除本测试文件外，不含本机绝对路径
+        for p in R.rglob('*'):
+            if (not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts
+                    or p.suffix not in ('.md', '.py', '.json', '.yaml') or p.name == 'test_package.py'):
+                continue
+            with self.subTest(file=str(p.relative_to(R))):
+                self.assertNotIn('/Users/', p.read_text(encoding='utf-8'))
 
     def test_templates_exist(self):
         for name in ('pilot-plan', 'kickoff-check', 'pilot-log', 'midpoint-review', 'pilot-readout'):

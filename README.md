@@ -41,3 +41,10 @@ python3 scripts/calc_effect.py --control 17,18,16,19,17,18 --treatment 11,12,10,
 
 ## 状态与来源
 草案：尚未经任何真实试点检验，行为测试只做过一轮小规模模拟（见 RESULTS）。设计依据是 fde-problem-framing 的指标规范与证据协议、fde-demo 的交接字段，以及作者的 FDE 实践经验；详见 [DEVELOPMENT.md](DEVELOPMENT.md)，推进计划见 [ROADMAP.md](ROADMAP.md)。示例的数字、人物与阈值都是示意，不是客户事实。
+
+## 参考与致谢
+
+本系列各 Skill 在方法设计上不同程度参考了《FDE:AI落地实战指南》，以及作者本人的 FDE 实践经历。各 Skill 的流程、模板、规则与脚本是在此基础上改写和扩展的方法。示例中的人物、数字与场景均为虚构，不是客户事实。
+
+## 许可
+MIT，见 [LICENSE](LICENSE)。

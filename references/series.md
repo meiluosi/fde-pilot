@@ -29,7 +29,7 @@ FDE Skill 系列各自独立运行，通过手动读取的产物衔接，不互�
 | Non-AI / Pivot | 改用非 AI 方案 | 主张被推翻，转向新发现 | 同左 |
 | Stop-Defer | 暂停并写重开条件 | 同左 | 同左 |
 
-knowledge-base 沿用四个词：`kb:Proceed` 是所写范围的原型或首批建设，不是上线；`kb:Investigate` 是权限、环境、治理或摸底证据不足；`kb:Pivot` 是该类问题改走数据查询、实时接口或源系统，不借用 Non-AI；`kb:Stop-Defer` 同左。
+knowledge-base 沿用四个词：`kb:Proceed` 是所写范围的原型或首批建设，不是上线；`kb:Investigate` 是权限、环境、治理或摸底证据不足；`kb:Pivot` 是该类问题改走数据查询、实时接口或源系统，或最简方案（现有搜索、目录加状态规则、规则定位加原文直出）已够，不借用 Non-AI；`kb:Stop-Defer` 同左。
 
 ## 边界
 | 事项 | 归谁 | 另一方做什么 |
